@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="International Student Program at Marian College Kuttikanam Autonomous">
+    <title>Marian College Kuttikanam | International Student Program</title>
+    <link rel="stylesheet" href="sample.css">
+    <style>
+        :root {
+            --primary: #003366;
+            --secondary: #990000;
+            --background: #f8f9fa;
+            --text: #333;
+            --white: #fff;
+            --font-family: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: var(--font-family);
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: var(--primary);
+            padding: 10px 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-link {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+        }
+
+        .nav-link:hover {
+            background: var(--secondary);
+            border-radius: 5px;
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 24px;
+            color: var(--white);
+            cursor: pointer;
+        }
+
+        .hero {
+            position: relative;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            background: url('img/college-banner.jpg') no-repeat center center/cover;
+        }
+
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+        }
+
+        .hero-title {
+            font-size: 32px;
+        }
+
+        .hero-text {
+            font-size: 18px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 6px;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .programs, .content {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                background: var(--primary);
+                width: 100%;
+                top: 80px;
+                left: 0;
+                padding: 10px 0;
+            }
+            .nav.active {
+                display: flex;
+            }
+            .menu-icon {
+                display: block;
+            }
+            .hero-title {
+                font-size: 26px;
+            }
+            .hero-text {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://mariancollege.org/wp-content/uploads/2023/03/marian-college-02.png" alt="Marian College Logo" class="logo"> 
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav class="nav" id="nav-menu">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="aboutus.html">About</a>
+        </nav>
+    </header>
+    
+    <section class="hero" style="background-image: url(https://mariancollege.org/wp-content/themes/marian-college/assets/img/banner/8.jpg);">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">International Student Program</h1>
+                <p class="hero-text">Explore global learning opportunities at Marian College Kuttikanam.</p>
+                <a href="#apply" class="cta-button">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <h2>Why Choose Marian College?</h2>
+            <ul>
+                <li>Recognized for academic excellence and innovation.</li>
+                <li>Diverse programs across multiple disciplines.</li>
+                <li>Scenic and student-friendly campus in Kerala.</li>
+                <li>Supportive international student services.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="programs">
+        <div class="container">
+            <h2>Programs Offered</h2>
+            <p><b>Undergraduate:</b> BBA, B.Com, BSc, BA, BCA</p>
+            <p><b>Postgraduate:</b> MBA, MCA, MSc, MA</p>
+            <p><b>Short-Term Courses:</b> Specialized skill-based programs</p>
+        </div>
+    </section>
+
+    <section class="programs">
+        <div class="container">
+            <h2>Admission Process</h2>
+            <ol>
+            <li>Step-by-Step Guide:</li>        
+                <ul>
+                    <li>Online Application</li>
+                    <li>Document Submission(Transcripts,Passport,English Proficiency)</li>
+                    <li>Offer Letter Issuance</li>
+                    <li>Visa Processing</li>
+                    <li>Enrollment Confirmation</li>
+                </ul>
+            <li>Eligibility Criteria & Language Requirements</li>
+            <li>Application Deadlines & Important Dates</li>
+        </div>
+    </section>
+
+    <section class="programs">
+        <div class="container">
+        <h2>Tuition Fees & Scholarships</h2>
+        <ul>
+          <li><strong>Annual Tuition Fees Breakdown:</strong> Details of tuition fees for each program.</li>
+            <li><strong>Available Scholarships for International Students:</strong> Merit-based, need-based, and special scholarships.</li>
+            <li><strong>Financial Aid & Payment Plans:</strong> Installment options and external funding sources.</li>
+        </ul>
+        </div>
+    </section>
+    
+    <section class="programs">
+        <div class="container">
+        <h2>Student Life & Campus Facilities</h2>
+        <ul>
+            <li><strong>On-Campus Accommodation:</strong> Hostels, meals, and available amenities.</li>
+            <li><strong>Student Support Services:</strong> Counseling, mentoring, and the International Office.</li>
+            <li><strong>Clubs & Extracurricular Activities:</strong> Student organizations, cultural events, and sports.</li>
+            <li><strong>Health & Wellness Services:</strong> Medical facilities, mental health support, and fitness centers.</li>
+        </ul>
+        </div>
+    </section>
+    
+    <section class="programs">
+        <div class="container">
+        <h2>Living in Kuttikanam, Kerala</h2>
+        <ul>
+            <li><strong>Cost of Living Guide:</strong> Estimated expenses for rent, food, and daily needs.</li>
+            <li><strong>Climate & Environment:</strong> Weather conditions and local attractions.</li>
+            <li><strong>Local Transportation & Connectivity:</strong> Public transport options and nearby airports.</li>
+        </ul>
+        </div>
+    </section>
+    
+    <section class="programs">
+        <div class="container">
+        <h2>Visa & Immigration Assistance</h2>
+        <ul>
+            <li><strong>Guidelines for Student Visa Application:</strong> Step-by-step visa process.</li>
+            <li><strong>Documents Required for Visa Processing:</strong> List of necessary documents.</li>
+            <li><strong>Support for Visa Extensions & Renewals:</strong> Assistance for long-term study plans.</li>
+        </ul>
+        </div>
+    </section>
+    
+    <section class="programs">
+        <div class="container">
+        <h2>Alumni Testimonials & Success Stories</h2>
+        <ul>
+            <li><strong>Student Experiences & Achievements:</strong> Stories from past international students.</li>
+            <li><strong>Career Paths After Graduation:</strong> Alumni working globally in various industries.</li>
+        </ul>
+        </div>
+    </section>
+    
+    <section class="programs">
+        <div class="container">
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> international@marian.edu</p>
+        <p><strong>Phone:</strong> +91-XXXXXXX</p>
+        <p><strong>WhatsApp Support:</strong> +91-XXXXXXXXXX</p>
+        <p><strong>Location:</strong> Marian College Kuttikanam, Idukki, Kerala</p>
+        </div>
+    </section>
+    
+    <section class="programs">
+        <div class="container">
+        <h2>FAQs</h2>
+        <details>
+            <summary>What are the admission requirements for international students?</summary>
+            <p>International students must submit their transcripts, passport copy, and English proficiency scores.</p>
+        </details>
+        <details>
+            <summary>How much does tuition cost?</summary>
+            <p>Tuition fees vary by program. Please refer to the tuition fee breakdown section.</p>
+        </details>
+        <details>
+            <summary>Are there on-campus housing options?</summary>
+            <p>Yes, Marian College provides on-campus hostel accommodations with meal plans.</p>
+        </details>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Marian College Kuttikanam. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-menu');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
