@@ -2,11 +2,11 @@ A Sample website created by a group of students for Mozilla foundation Project
 
 Members:
 Asbin 
-Irene
+Irine
 Jerin
 Jianna
 Merin 
-Rijual
+Rijwal
 Sahil
 Sivani
 Vaishnav
